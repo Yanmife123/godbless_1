@@ -241,7 +241,7 @@ a:hover {
   align-items: center;
   /* border: 1px solid yellow; */
   flex-direction: column;
-  overflow-x: auto;
+  overflow-y: auto;
   scrollbar-color: rgba(237, 237, 237, 1);
   height: 420px;
 }
@@ -301,6 +301,7 @@ a:hover {
   .main {
     align-items: normal;
     padding: 0;
+    overflow-y: auto;
   }
   .right_side,
   .left_side {
