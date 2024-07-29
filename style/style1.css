@@ -28,10 +28,10 @@ body {
 }
 .main {
   display: flex;
-  height: 99vh;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  height: 99vh;
 }
 .section {
   min-height: 550px;
@@ -302,7 +302,10 @@ a:hover {
     align-items: normal;
     padding: 0;
   }
-
+  .right_side,
+  .left_side {
+    height: 49.5vh;
+  }
   .section {
     flex-direction: column-reverse;
   }
@@ -345,6 +348,11 @@ a:hover {
     padding: 10px;
   }
   /* reg.html */
+
+  .reg_left,
+  .reg_right {
+    height: 99vh;
+  }
   .reg_right {
     display: none;
   }
