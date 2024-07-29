@@ -301,7 +301,6 @@ a:hover {
   .main {
     align-items: normal;
     padding: 0;
-    overflow-y: auto;
   }
   .section {
     flex-direction: column-reverse;
@@ -346,10 +345,7 @@ a:hover {
   }
   /* reg.html */
 
-  .reg_left,
-  .reg_right {
-    height: 99vh;
-  }
+
   .reg_right {
     display: none;
   }
