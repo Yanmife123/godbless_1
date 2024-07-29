@@ -303,10 +303,6 @@ a:hover {
     padding: 0;
     overflow-y: auto;
   }
-  .right_side,
-  .left_side {
-    height: 49.5vh;
-  }
   .section {
     flex-direction: column-reverse;
   }
