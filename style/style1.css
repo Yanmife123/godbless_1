@@ -28,10 +28,10 @@ body {
 }
 .main {
   display: flex;
+  height: 99vh;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  height: 99vh;
 }
 .section {
   min-height: 550px;
@@ -241,7 +241,7 @@ a:hover {
   align-items: center;
   /* border: 1px solid yellow; */
   flex-direction: column;
-  overflow-y: auto;
+  overflow-x: auto;
   scrollbar-color: rgba(237, 237, 237, 1);
   height: 420px;
 }
@@ -302,6 +302,7 @@ a:hover {
     align-items: normal;
     padding: 0;
   }
+
   .section {
     flex-direction: column-reverse;
   }
@@ -341,11 +342,9 @@ a:hover {
     font-size: 24px;
   }
   .left_side {
-    padding: 20px;
+    padding: 10px;
   }
   /* reg.html */
-
-
   .reg_right {
     display: none;
   }
