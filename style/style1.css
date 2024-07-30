@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  height: -webkit-fill-available;
+}
 @font-face {
   font-family: inter;
   src: url(font/Inter-Light.ttf);
@@ -25,11 +28,11 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-family: inter_re, sans-serif;
-  height: 98vh;
+  height: -webkit-fill-available;
 }
 .main {
   display: flex;
-  height: inherit;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
@@ -295,6 +298,9 @@ a:hover {
   .main {
     align-items: normal;
     padding: 0;
+  }
+  body {
+    height: 100%;
   }
 
   .section {
