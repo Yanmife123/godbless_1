@@ -86,7 +86,7 @@ faculty.forEach((element) => {
     department.classList.toggle("opening");
     document.querySelector(".depart_head").classList.remove("hidden");
     document.querySelector(".reg_btn_container").classList.remove("hidden");
-    element.classList.toggle("clicked");
+    element.setAttribute("id", "clicked");
     departemntal(id);
     setTimeout(() => {
       department.classList.toggle("opening");
@@ -96,7 +96,7 @@ faculty.forEach((element) => {
 
 function backGroundColor() {
   faculty.forEach((element) => {
-    element.classList.remove("clicked");
+    element.removeAttribute("id");
   });
 }
 function departemntal(num) {

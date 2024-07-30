@@ -25,6 +25,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   font-family: inter_re, sans-serif;
+  height: 100vh;
 }
 .main {
   display: flex;
@@ -166,14 +167,6 @@ a:hover {
   grid-template-columns: repeat(3, 1fr); /*Three columns with equal width */
   grid-gap: 8px; /* Gap between grid items */
 }
-.maybe {
-  background-color: transparent;
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .faculty {
   height: 100px;
   /*   border: 1px solid green; */
@@ -182,6 +175,7 @@ a:hover {
   align-items: center;
   padding: 10px;
   cursor: default;
+  flex-direction: column;
 }
 .img {
   height: 90px;
@@ -203,7 +197,7 @@ a:hover {
 #but {
   display: none;
 }
-.clicked {
+#clicked {
   background-color: rgba(1, 25, 62, 1);
 }
 /* reg_right */
@@ -241,7 +235,7 @@ a:hover {
   align-items: center;
   /* border: 1px solid yellow; */
   flex-direction: column;
-  overflow-x: auto;
+  overflow-y: auto;
   scrollbar-color: rgba(237, 237, 237, 1);
   height: 420px;
 }
