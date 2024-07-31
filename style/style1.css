@@ -116,7 +116,6 @@ body {
 }
 p {
   line-height: 19px;
-  font-family: inter_li, sans-serif;
 }
 a {
   text-decoration: none;
@@ -124,12 +123,13 @@ a {
   width: inherit;
   padding: 10px 0 10px 0;
   display: inline-block;
-  border: 1px solid;
+  border: 1px solid var(--color-white);
   text-align: center;
   border-radius: 16px;
   text-transform: uppercase;
   transition: 0.2s;
   cursor: pointer;
+  font-weight: 700;
 }
 .right_btn {
   width: 360px;
@@ -315,6 +315,7 @@ a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
   }
   a {
     font-family: inter_li, sans-serif;
@@ -363,10 +364,16 @@ a:hover {
     flex-direction: row;
     background-color: var(--color-blue);
     border-radius: 8px;
+    color:var(--color-gold);
+  }
+  #clicked {
+    color: var(--color-white);
+    
   }
   .faculty_name {
     text-align: start;
     margin-left: 12px;
+    color: inherit;
   }
   .reg_left h2 {
     color: var(--color-blue);
@@ -400,7 +407,7 @@ a:hover {
     height: 80%;
     overflow-x: auto;
   }
-  .reg_btn_container{
+  .reg_btn_container {
     justify-content: space-between;
     width: inherit;
     margin-top: 10px;
