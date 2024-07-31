@@ -187,13 +187,11 @@ a:hover {
   font-size: 13px;
   text-align: center;
 }
-.reg_lf_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#reg_lf_container {
   width: 300px;
 }
-#but {
+#next,
+#prev {
   display: none;
 }
 #clicked {
@@ -373,19 +371,13 @@ a:hover {
   .reg_left h2 {
     color: var(--color-blue);
   }
-  #but {
+  #next,
+  #prev {
     display: block;
     background-color: var(--color-blue);
   }
   #section {
     background-color: var(--color-white);
-  }
-  .maybe {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: inherit;
   }
   .reg_lf_container {
     width: 350px;
@@ -407,6 +399,11 @@ a:hover {
     width: 85%;
     height: 80%;
     overflow-x: auto;
+  }
+  .reg_btn_container{
+    justify-content: space-between;
+    width: inherit;
+    margin-top: 10px;
   }
 }
 

@@ -1,7 +1,10 @@
 let faculty = document.querySelectorAll(".faculty");
-let container;
+const reg_left = document.querySelector(".reg_left");
+const reg_right = document.querySelector(".reg_right");
 let department = document.querySelector(".department");
 let depart_Container = document.querySelector(".depart_container");
+let container;
+let reg = 0;
 let departBackground;
 let display = 0;
 let display2 = 0;
@@ -142,9 +145,32 @@ function check() {
     });
   });
 }
+function reg_opening() {
+  if (reg == 0) {
+    reg_right.classList.toggle("opening2");
+    setTimeout(() => {
+      reg_right.classList.toggle("opening2");
+    }, 1600);
+  } else {
+    reg_left.classList.toggle("opening2");
+    setTimeout(() => {
+      reg_left.classList.toggle("opening2");
+    }, 1600);
+  }
+}
 
-let next = document.querySelector("#but");
+let next = document.querySelector("#next");
 next.addEventListener("click", () => {
-  document.querySelector(".reg_left").style.display = "none";
-  document.querySelector(".reg_right").style.display = "flex";
+  reg_left.style.display = "none";
+  reg_right.style.display = "flex";
+  reg_opening();
+  reg = 1;
+});
+
+let prev = document.querySelector("#prev");
+prev.addEventListener("click", () => {
+  reg_left.style.display = "flex";
+  reg_right.style.display = "none";
+  reg_opening();
+  reg = 0;
 });
