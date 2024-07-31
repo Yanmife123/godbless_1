@@ -319,8 +319,13 @@ a:hover {
   }
   a {
     font-family: inter_li, sans-serif;
-    padding: 8px 16px;
+    padding: 8px 14px;
     width: 108px;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
   }
   a:hover {
     background-color: var(--color-blue);
